@@ -50,12 +50,13 @@ class Bank():
 main = Bank()
 opc = 0
 
-while opc != 5:
+while opc != 6:
     
     opc = main.menu()
     
     if opc == 1:
-        print(f'Usuário: {main.user}')
+        print(f'Usuário: {main.user.keys()}')
+        print(f'Conta: {main.user.values()}')
         print(f'Saldo: R$ {main.money}')
         print(f'Limite de saque: R$ {main.limit}')
         y = len(main.transitions)
